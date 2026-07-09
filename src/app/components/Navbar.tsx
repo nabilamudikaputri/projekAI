@@ -48,7 +48,7 @@ export function Navbar() {
             <Bug className="size-5" />
           </span>
           <div className="leading-tight">
-            <div>ErrorWise</div>
+            <div>LarCare</div>
             <div className="text-primary-foreground/70" style={{ fontSize: 11 }}>
               Diagnosa Error Laravel
             </div>

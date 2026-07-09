@@ -68,7 +68,7 @@ export function Login() {
               Masuk
             </Button>
             <p className="text-center text-sm text-muted-foreground">
-              Demo: <strong>admin@errorwise.com</strong> / <strong>admin123</strong>
+              Demo: <strong>admin@larcare.com</strong> / <strong>admin123</strong>
             </p>
           </form>
         </CardContent>

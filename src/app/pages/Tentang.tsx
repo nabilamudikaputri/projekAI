@@ -80,7 +80,7 @@ export function Tentang() {
             transition={{ delay: 0.1 }}
             className="mt-5 tracking-tight"
           >
-            Bagaimana ErrorWise Bekerja?
+            Bagaimana LarCare Bekerja?
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

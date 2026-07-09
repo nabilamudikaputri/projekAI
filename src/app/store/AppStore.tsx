@@ -123,7 +123,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
     login: (email, p) => {
       // Kredensial admin demo. Ganti dengan autentikasi nyata bila diperlukan.
       const ok =
-        email.trim().toLowerCase() === "admin@errorwise.com" && p === "admin123";
+        email.trim().toLowerCase() === "admin@larcare.com" && p === "admin123";
       if (ok) setIsAdmin(true);
       return ok;
     },

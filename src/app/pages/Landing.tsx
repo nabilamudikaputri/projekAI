@@ -104,7 +104,7 @@ export function Landing() {
           >
             Pecahkan Error Laravel dengan{" "}
             <span className="bg-gradient-to-r from-brand to-brand-2 bg-clip-text text-transparent">
-              ErrorWise
+              LarCare
             </span>
           </motion.h1>
 
