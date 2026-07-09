@@ -1,4 +1,6 @@
-# Sistem Pakar Diagnosa Kesalahan Umum Pengembangan Website Laravel pada Mahasiswa Pemula Menggunakan Forward Chaining
+# Errorwise
+
+Sistem pakar diagnosa kesalahan umum pengembangan website Laravel pada mahasiswa pemula menggunakan forward chaining.
 
 ## Running the code
 
