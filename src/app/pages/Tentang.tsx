@@ -88,7 +88,7 @@ export function Tentang() {
             transition={{ delay: 0.2 }}
             className="mx-auto mt-3 max-w-2xl text-muted-foreground"
           >
-            Sistem ini memakai <strong>Forward Chaining</strong> — penalaran maju
+            Sistem ini memakai <strong>Forward Chaining</strong> penalaran maju
             yang berangkat dari fakta (gejala) menuju kesimpulan (masalah), lalu
             menghitung tingkat keyakinannya.
           </motion.p>

@@ -116,7 +116,7 @@ export function Landing() {
             className="mx-auto mt-4 max-w-2xl text-muted-foreground"
           >
             Asisten cerdas untuk mahasiswa pemula. Pilih gejala error yang Anda
-            alami, dan ErrorWise akan menemukan penyebab, tingkat keyakinan,
+            alami, dan LarCare akan menemukan penyebab, tingkat keyakinan,
             serta solusinya secara otomatis.
           </motion.p>
 
@@ -250,7 +250,7 @@ export function Landing() {
       {/* FEATURES */}
       <section className="mx-auto max-w-6xl px-4 py-16">
         <div className="text-center">
-          <h2 className="tracking-tight">Kenapa ErrorWise?</h2>
+          <h2 className="tracking-tight">Kenapa LarCare?</h2>
         </div>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f, i) => (

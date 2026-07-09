@@ -1,5 +1,5 @@
 """
-ErrorWise - Sistem Pakar Diagnosa Kesalahan Umum Pengembangan Website Laravel
+LarCare - Sistem Pakar Diagnosa Kesalahan Umum Pengembangan Website Laravel
 Metode: Forward Chaining + Tingkat Keyakinan (Confidence)
 
 Cara menjalankan di VSCode / terminal:
@@ -187,7 +187,7 @@ def tampilkan_hasil(hasil, dipilih):
 
 def main():
     print("=" * 60)
-    print(" ErrorWise - Sistem Pakar Diagnosa Error Laravel")
+    print(" LarCare - Sistem Pakar Diagnosa Error Laravel")
     print(" Metode: Forward Chaining")
     print("=" * 60)
 
@@ -203,7 +203,7 @@ def main():
 
         lagi = input("\nKonsultasi lagi? (y/n): ").strip().lower()
         if lagi != "y":
-            print("Terima kasih telah menggunakan ErrorWise!")
+            print("Terima kasih telah menggunakan LarCare!")
             break
 
 

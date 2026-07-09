@@ -51,7 +51,7 @@ export function Login() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="admin@errorwise.com"
+                placeholder="admin@larcare.com"
               />
             </div>
             <div className="space-y-2">
