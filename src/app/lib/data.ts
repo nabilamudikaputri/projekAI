@@ -116,6 +116,7 @@ export type User = {
   nama: string;
   email: string;
   password: string;
+  avatar?: string;
 };
 
 export type Pertanyaan = {

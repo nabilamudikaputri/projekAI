@@ -18,6 +18,9 @@ import {
   Database,
   FileWarning,
   Lock,
+  Terminal,
+  Wrench,
+  CircleAlert,
 } from "lucide-react";
 
 const fadeUp = {
@@ -81,7 +84,7 @@ export function Landing() {
           transition={{ duration: 11, repeat: Infinity, ease: "easeInOut" }}
         />
 
-        <div className="mx-auto max-w-6xl px-4 py-24 text-center">
+        <div className="mx-auto max-w-6xl px-4 pb-20 pt-16 text-center md:pt-24">
           <motion.span
             initial="hidden"
             animate="show"
@@ -92,7 +95,7 @@ export function Landing() {
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-75" />
               <span className="relative inline-flex size-2 rounded-full bg-primary" />
             </span>
-            Sistem Pakar Berbasis Forward Chaining
+            Pusat Bantuan Error Laravel
           </motion.span>
 
           <motion.h1
@@ -102,7 +105,7 @@ export function Landing() {
             transition={{ delay: 0.1 }}
             className="mx-auto mt-6 max-w-3xl tracking-tight"
           >
-            Pecahkan Error Laravel dengan{" "}
+            Temukan sumber error Laravel,{" "}
             <span className="bg-gradient-to-r from-brand to-brand-2 bg-clip-text text-transparent">
               LarCare
             </span>
@@ -115,9 +118,8 @@ export function Landing() {
             transition={{ delay: 0.2 }}
             className="mx-auto mt-4 max-w-2xl text-muted-foreground"
           >
-            Asisten cerdas untuk mahasiswa pemula. Pilih gejala error yang Anda
-            alami, dan LarCare akan menemukan penyebab, tingkat keyakinan,
-            serta solusinya secara otomatis.
+            Pilih gejala yang muncul di proyek Anda. Sistem akan mencocokkan
+            data dengan aturan diagnosa dan menampilkan langkah perbaikan yang relevan.
           </motion.p>
 
           <motion.div
@@ -138,6 +140,28 @@ export function Landing() {
                 Cara Kerja Sistem
               </Button>
             </Link>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.42 }}
+            className="mx-auto mt-12 grid max-w-4xl overflow-hidden rounded-2xl border border-red-200 bg-[#2b1718] text-left shadow-2xl shadow-red-950/15 md:grid-cols-[1.25fr_.75fr]"
+          >
+            <div className="p-5 font-mono text-sm leading-7 text-red-100">
+              <div className="mb-4 flex items-center gap-2 border-b border-white/10 pb-3 font-sans text-xs text-red-100/70">
+                <Terminal className="size-4" /> larcare / diagnostic-log
+                <span className="ml-auto flex gap-1"><i className="size-2 rounded-full bg-red-400" /><i className="size-2 rounded-full bg-amber-300" /><i className="size-2 rounded-full bg-emerald-400" /></span>
+              </div>
+              <p><span className="text-red-300">$</span> membaca gejala yang dipilih...</p>
+              <p><span className="text-emerald-300">✓</span> 20 gejala tersedia dalam basis pengetahuan</p>
+              <p><span className="text-emerald-300">✓</span> aturan cocok ditemukan</p>
+              <p className="mt-2 text-white">hasil: <span className="rounded bg-red-500/25 px-1.5 py-0.5 text-red-100">solusi siap ditampilkan</span></p>
+            </div>
+            <div className="flex flex-col justify-center gap-4 bg-[#fff4f2] p-6 text-[#4b1d21]">
+              <span className="flex size-11 items-center justify-center rounded-xl bg-red-100 text-primary"><CircleAlert className="size-5" /></span>
+              <div><p className="font-semibold">Bukan sekadar daftar error</p><p className="mt-1 text-sm leading-6 text-muted-foreground">Setiap hasil berisi gejala yang cocok dan langkah penanganan yang bisa langsung dicoba.</p></div>
+              <div className="flex items-center gap-2 text-sm font-medium text-primary"><Wrench className="size-4" /> Solusi terarah</div>
+            </div>
           </motion.div>
         </div>
       </section>

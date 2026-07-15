@@ -40,6 +40,7 @@ type AppState = {
     nama: string;
     email: string;
     password?: string;
+    avatar?: string;
   }) => string | null;
   addPertanyaan: (pesan: string) => void;
   replyPertanyaan: (id: string, balasan: string) => void;
@@ -155,7 +156,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
       return false;
     },
     logoutUser: () => setCurrentUser(null),
-    updateUser: ({ nama, email, password }) => {
+    updateUser: ({ nama, email, password, avatar }) => {
       if (!currentUser) return "Tidak ada pengguna yang masuk.";
       const normalized = email.trim().toLowerCase();
       if (
@@ -168,6 +169,7 @@ export function AppProvider({ children }: { children: ReactNode }) {
         nama: nama.trim(),
         email: normalized,
         password: password && password.trim() ? password : currentUser.password,
+        avatar: avatar !== undefined ? avatar : currentUser.avatar,
       };
       setUsers((prev) =>
         prev.map((u) => (u.id === currentUser.id ? updated : u)),
